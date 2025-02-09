@@ -1,10 +1,10 @@
 {
-  "proxy": "https://mern-authentication-3a0w.onrender.com/",
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "date-fns": "^2.28.0",
+    "dotenv": "^16.4.7",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-router-dom": "^6.3.0",
