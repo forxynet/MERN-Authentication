@@ -12,7 +12,7 @@ const WorkoutDetails = ({ workout }) => {
       return
     }
 
-    const response = await fetch(process.env.REACT_APP_API_BASE_URL + '/api/workouts/' + workout._id, {
+    const response = await fetch('/api/workouts/' + workout._id, {
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json',

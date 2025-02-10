@@ -10,8 +10,9 @@ export const useSignup = () => {
     setIsLoading(true)
     setError(null)
 
-    const response = await fetch(process.env.REACT_APP_API_BASE_URL + '/api/user/signup', {
+    const response = await fetch('/api/user/signup', {
       method: 'POST',
+      mode: "cors",
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ email, password })
     })
